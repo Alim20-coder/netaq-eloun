@@ -23,11 +23,8 @@ body{overflow-x:hidden;color:#445;line-height:1.9}
 img,iframe{max-width:100%}
 section{padding:70px 0;overflow:hidden;scroll-margin-top:60px}
 .alt{background:#f2f7fc}
-h2{color:var(--p);font-weight:800}
-h2:after{content:"";display:block;width:70px;height:4px;background:var(--a);margin:10px 0 18px;border-radius:4px;transition:.5s}
-h2:hover:after{width:130px}
+h2{color:var(--p);font-weight:800;margin-bottom:24px}
 .t{text-align:center;max-width:720px;margin:0 auto 40px}
-.t h2:after{margin-inline:auto}
 .navbar{background:var(--p);box-shadow:0 4px 20px rgba(0,0,0,.3)}
 .navbar-brand{font-weight:800;color:#fff!important}
 .navbar-brand i{color:var(--a)}
@@ -74,6 +71,17 @@ label{font-weight:700;color:var(--p);margin:8px 0 4px}
 @keyframes pu{0%{box-shadow:0 0 0 0 rgba(255,138,0,.6)}100%{box-shadow:0 0 0 22px transparent}}
 footer{background:#071a30;color:#c5d0dd;padding:45px 0 20px}
 footer a{color:var(--a);text-decoration:none}
+.contact-box{background:linear-gradient(145deg,#ffffff,#f4f8fc);border:2px solid #e3ecf6;border-radius:22px;padding:28px;height:100%;display:flex;flex-direction:column;justify-content:space-between;box-shadow:0 10px 30px rgba(11,42,74,.06)}
+.c-item{display:flex;align-items:center;gap:14px;background:#fff;padding:12px 16px;border-radius:14px;border:1px solid #e6eef7;margin-bottom:12px;text-decoration:none;color:var(--p);transition:all .35s ease}
+.c-item:hover{background:var(--p);color:#fff;transform:translateX(-6px);border-color:var(--a);box-shadow:0 8px 20px rgba(11,42,74,.15)}
+.c-icon{width:44px;height:44px;border-radius:12px;background:rgba(255,138,0,.12);color:var(--a);display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0;transition:.35s}
+.c-item:hover .c-icon{background:var(--a);color:#fff;transform:rotate(-10deg) scale(1.08)}
+.c-item.wa-item .c-icon{background:rgba(37,211,102,.12);color:#25d366}
+.c-item.wa-item:hover .c-icon{background:#25d366;color:#fff}
+.c-info small{display:block;font-size:.78rem;color:#778;transition:.3s}
+.c-item:hover .c-info small{color:#cbd5e1}
+.c-info strong{font-size:.98rem;font-weight:700}
+.support-banner{background:linear-gradient(135deg,var(--p),#154c82);color:#fff;border-radius:16px;padding:18px;margin-top:12px;border-right:5px solid var(--a)}
 @media(max-width:768px){.bg{background-attachment:scroll!important}section{padding:50px 0}}
 </style>
 </head>
@@ -94,14 +102,12 @@ footer a{color:var(--a);text-decoration:none}
 <li><a class="nav-link" href="#contact">اتصل بنا</a></li>
 </ul></div></div></nav>
 
-<!-- 1 -->
 <section class="hero bg" id="home"><div class="container text-center">
 <h1>نطاق العون للخدمات اللوجستية<br>نقل مبرد وجاف في الرياض والدمام وجدة</h1>
 <p class="my-3">نوصّل بضاعتك بأمان وفي الموعد بأسطول حديث من الشاحنات المبردة والجافة، مع متابعة مستمرة حتى لحظة التسليم.</p>
 <a class="b" href="#contact">اطلب عرض سعر</a><a class="b" href="tel:+966536304418">اتصل الآن</a>
 </div></section>
 
-<!-- 2 -->
 <section id="about"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 r"><img class="im" src="css/3.jpg" alt="شركة نقل جاف ومبرد - نطاق العون" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>من نحن</h2>
@@ -109,7 +115,6 @@ footer a{color:var(--a);text-decoration:none}
 <p>نعمل مع الأفراد والمطاعم والمتاجر والمصانع والشركات، ونوفر حلول نقل مرنة تناسب حجم شحنتك وميزانيتك ومواعيدك.</p></div>
 </div></div></section>
 
-<!-- 3 -->
 <section class="alt"><div class="container"><div class="row g-4 text-center">
 <div class="col-6 col-md-3 r"><div class="c"><div class="n" data-n="3">0</div><p>مدن رئيسية نغطيها</p></div></div>
 <div class="col-6 col-md-3 r"><div class="c"><div class="n" data-n="2">0</div><p>نوعان من النقل: مبرد وجاف</p></div></div>
@@ -117,7 +122,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-6 col-md-3 r"><div class="c"><div class="n" data-n="7">0</div><p>أيام في الأسبوع</p></div></div>
 </div></div></section>
 
-<!-- 4 -->
 <section id="services"><div class="container">
 <div class="t"><h2>خدماتنا اللوجستية</h2><p>حلول نقل متكاملة تغطي احتياجات الأفراد والشركات بأعلى مستويات الأمان والالتزام.</p></div>
 <div class="row g-4">
@@ -129,7 +133,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-md-6 col-lg-4 r"><div class="c"><i class="bi bi-building"></i><h3>عقود الشركات</h3><p>اتفاقيات نقل دورية للشركات والمتاجر والمطاعم بأسعار مناسبة وخدمة ثابتة.</p></div></div>
 </div></div></section>
 
-<!-- 5 -->
 <section class="alt" id="cold"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 order-lg-2 r"><img class="im" src="css/1.jpg" alt="نقل مبرد في الرياض والدمام وجدة" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>النقل المبرد</h2>
@@ -138,7 +141,6 @@ footer a{color:var(--a);text-decoration:none}
 <a class="b" href="#contact">اطلب نقل مبرد</a></div>
 </div></div></section>
 
-<!-- 6 -->
 <section id="dry"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 r"><img class="im" src="css/2.jpg" alt="نقل جاف بين المدن" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>النقل الجاف</h2>
@@ -147,7 +149,6 @@ footer a{color:var(--a);text-decoration:none}
 <a class="b" href="#contact">اطلب نقل جاف</a></div>
 </div></div></section>
 
-<!-- 7 -->
 <section class="alt"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-5 r"><img class="im" src="css/4.jpg" alt="أسطول شاحنات نطاق العون" loading="lazy"></div>
 <div class="col-lg-7"><h2>أسطولنا</h2><div class="row g-3">
@@ -157,7 +158,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-sm-6 r"><div class="c"><i class="bi bi-boxes"></i><h3>شاحنات بضائع عامة</h3><p>لتغطية الأحمال المتنوعة بين المدن.</p></div></div>
 </div></div></div></div></section>
 
-<!-- 8 -->
 <section><div class="container">
 <div class="t"><h2>لماذا نطاق العون؟</h2><p>ست أسباب تجعلنا الخيار الأول لنقل بضاعتك.</p></div>
 <div class="row g-4">
@@ -169,7 +169,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-md-6 col-lg-4 r"><div class="c"><i class="bi bi-headset"></i><h3>دعم مستمر</h3><p>فريق جاهز للرد على اتصالك أو رسالتك.</p></div></div>
 </div></div></section>
 
-<!-- 9 -->
 <section class="bg b2" id="cities"><div class="container">
 <div class="t"><h2>المدن التي نغطيها</h2><p>ننقل بضاعتك من وإلى أهم ثلاث مدن في المملكة.</p></div>
 <div class="row g-4 text-center">
@@ -178,7 +177,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-md-4 r"><div class="c g"><i class="bi bi-sun"></i><h3>نقل مبرد وجاف في جدة</h3><p>نقل إلى جدة ومكة وما حولها بمواعيد دقيقة وتبريد مستمر.</p></div></div>
 </div></div></section>
 
-<!-- 10 -->
 <section><div class="container">
 <div class="t"><h2>القطاعات التي نخدمها</h2><p>نقدم حلولاً مناسبة لمختلف الأنشطة التجارية.</p></div>
 <div class="row g-4 text-center">
@@ -190,7 +188,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-6 col-lg-4 r"><div class="c"><i class="bi bi-tools"></i><h3>مواد البناء والأجهزة</h3></div></div>
 </div></div></section>
 
-<!-- 11 -->
 <section class="alt"><div class="container">
 <div class="t"><h2>كيف نعمل؟</h2><p>أربع خطوات بسيطة من الطلب إلى التسليم.</p></div>
 <div class="row g-4 text-center">
@@ -200,9 +197,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-6 col-lg-3 r"><div class="c"><div class="n">4</div><h3>نسلّم</h3><p>تسليم آمن وتأكيد الاستلام معك.</p></div></div>
 </div></div></section>
 
-<!-- ========================================== -->
-<!-- سكشن 1 التفاعلي الجديد: حاسبة الشحن الفورية -->
-<!-- ========================================== -->
 <section id="calc-section">
   <div class="container" style="max-width: 950px;">
     <div class="t">
@@ -250,7 +244,6 @@ footer a{color:var(--a);text-decoration:none}
   </div>
 </section>
 
-<!-- 12 -->
 <section class="alt"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 order-lg-2 r"><img class="im" src="css/8.jpg" alt="سلسلة التبريد في نقل الأغذية" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>سلسلة التبريد</h2>
@@ -258,7 +251,6 @@ footer a{color:var(--a);text-decoration:none}
 <ul class="ck"><li>تبريد من 0 إلى 4 درجات للألبان والخضار والفواكه</li><li>تجميد حتى -18 درجة للحوم والدواجن والمثلجات</li><li>تحميل سريع لتقليل فقدان البرودة</li><li>فحص وحدة التبريد قبل كل رحلة</li></ul></div>
 </div></div></section>
 
-<!-- 13 -->
 <section><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 r"><img class="im" src="css/5.jpg" alt="تحميل آمن للبضائع" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>السلامة وحماية الشحنات</h2>
@@ -266,7 +258,6 @@ footer a{color:var(--a);text-decoration:none}
 <ul class="ck"><li>فحص الشاحنة قبل التحميل</li><li>ترتيب وتثبيت البضائع بشكل آمن</li><li>الالتزام بأنظمة النقل والسلامة بالمملكة</li><li>إمكانية تغطية الشحنة تأمينياً بالاتفاق</li></ul></div>
 </div></div></section>
 
-<!-- 14 -->
 <section class="alt"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-6 order-lg-2 r"><img class="im" src="css/6.jpg" alt="متابعة الشحنات" loading="lazy"></div>
 <div class="col-lg-6 r"><h2>متابعة الشحنة لحظة بلحظة</h2>
@@ -274,9 +265,6 @@ footer a{color:var(--a);text-decoration:none}
 <ul class="ck"><li>تحديثات حالة الشحنة عبر واتساب</li><li>تواصل مباشر مع فريق العمليات</li><li>إشعارك قبل الوصول بوقت مناسب</li><li>تأكيد الاستلام بعد التسليم</li></ul></div>
 </div></div></section>
 
-<!-- ============================================== -->
-<!-- سكشن 2 التفاعلي الجديد: نظام التتبع الذكي للشحنات -->
-<!-- ============================================== -->
 <section id="tracking-section">
   <div class="container" style="max-width: 950px;">
     <div class="t">
@@ -309,9 +297,6 @@ footer a{color:var(--a);text-decoration:none}
   </div>
 </section>
 
-<!-- ============================================== -->
-<!-- سكشن 3 التفاعلي الجديد: قصص النجاح وآراء العملاء -->
-<!-- ============================================== -->
 <section class="alt" id="success-stories">
   <div class="container">
     <div class="t">
@@ -347,14 +332,12 @@ footer a{color:var(--a);text-decoration:none}
   </div>
 </section>
 
-<!-- 15 -->
 <section class="bg b3 text-center"><div class="container">
 <h2 class="mb-3">جاهز تنقل بضاعتك؟</h2>
 <p class="fs-5">احصل على عرض سعر سريع لنقل مبرد أو جاف بين الرياض والدمام وجدة.</p>
 <a class="b" href="https://wa.me/966536304418" target="_blank" rel="noopener">واتساب</a><a class="b" href="tel:+966536304418">اتصال مباشر</a>
 </div></section>
 
-<!-- 16 -->
 <section><div class="container">
 <div class="t"><h2>تعهداتنا لك</h2><p>قيم نلتزم بها في كل شحنة.</p></div>
 <div class="row g-4 text-center">
@@ -364,7 +347,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-6 col-lg-3 r"><div class="c"><i class="bi bi-eye"></i><h3>الشفافية</h3><p>أسعار وخطوات واضحة بلا مفاجآت.</p></div></div>
 </div></div></section>
 
-<!-- 17 -->
 <section class="alt"><div class="container">
 <div class="t"><h2>ما الذي يحدد سعر النقل؟</h2><p>يختلف السعر حسب عدة عوامل، ونحدد لك عرضاً مناسباً بعد معرفة تفاصيل الشحنة.</p></div>
 <div class="row g-3">
@@ -372,7 +354,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="col-md-6 r"><ul class="ck"><li>درجة الحرارة المطلوبة للبضاعة</li><li>موعد التحميل والتسليم</li><li>عدد نقاط التوصيل</li></ul></div>
 </div></div></section>
 
-<!-- 18 -->
 <section id="faq"><div class="container" style="max-width:850px">
 <div class="t"><h2>الأسئلة الشائعة</h2></div>
 <div class="accordion r" id="ac">
@@ -383,7 +364,6 @@ footer a{color:var(--a);text-decoration:none}
 <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#q5">هل يمكن التعاقد للنقل الدوري؟</button></h3><div id="q5" class="accordion-collapse collapse" data-bs-parent="#ac"><div class="accordion-body">بالتأكيد، نوفر اتفاقيات نقل دورية للشركات والمطاعم والمتاجر.</div></div></div>
 </div></div></section>
 
-<!-- 19 -->
 <section class="alt"><div class="container"><div class="row align-items-center g-4">
 <div class="col-lg-5 r"><img class="im" src="css/7.jpg" alt="اختيار شركة نقل مبرد" loading="lazy"></div>
 <div class="col-lg-7 r"><h2>كيف تختار شركة نقل مبرد وجاف مناسبة؟</h2>
@@ -396,7 +376,6 @@ footer a{color:var(--a);text-decoration:none}
 <p>اطلب عرضاً واضحاً يشمل نوع النقل والمسافة والوقت، وتجنب الأسعار المبهمة. في نطاق العون نقدم عروضاً شفافة تناسب شحنتك.</p></div>
 </div></div></section>
 
-<!-- 20 -->
 <section id="contact"><div class="container">
 <div class="t"><h2>تواصل معنا</h2><p>أرسل تفاصيل شحنتك وسنرد عليك في أسرع وقت.</p></div>
 <div class="row g-4">
@@ -407,11 +386,54 @@ footer a{color:var(--a);text-decoration:none}
 <label for="c">المدينة</label><select class="form-select" id="c" name="c"><option>الرياض</option><option>الدمام</option><option>جدة</option></select>
 <label for="d">تفاصيل الشحنة</label><textarea class="form-control" id="d" name="d" rows="4"></textarea>
 <button class="b mt-3 w-100" type="submit">إرسال الطلب عبر واتساب</button></form></div>
-<div class="col-lg-5 r"><div class="c"><h3>بيانات التواصل</h3>
-<p><i class="bi bi-telephone fs-5"></i> <a href="tel:+966536304418">0536304418</a></p>
-<p><i class="bi bi-whatsapp fs-5"></i> <a href="https://wa.me/966536304418" target="_blank" rel="noopener">راسلنا على واتساب</a></p>
-<p><i class="bi bi-envelope fs-5"></i> <a href="mailto:hsn957128@gmail.com">hsn957128@gmail.com</a></p>
-<p><i class="bi bi-geo-alt fs-5"></i> الرياض - الدمام - جدة</p></div></div>
+<div class="col-lg-5 r">
+  <div class="contact-box">
+    <div>
+      <h3 class="fw-bold mb-1" style="color:var(--p)">بيانات التواصل المباشر</h3>
+      <p class="text-muted small mb-4">فريق العمليات جاهز للرد على استفساراتك وتنسيق شحنتك فوراً.</p>
+
+      <a href="tel:+966536304418" class="c-item">
+        <div class="c-icon"><i class="bi bi-telephone-fill"></i></div>
+        <div class="c-info">
+          <small>اتصال هاتفي مباشر</small>
+          <strong dir="ltr">0536304418</strong>
+        </div>
+      </a>
+
+      <a href="https://wa.me/966536304418" target="_blank" rel="noopener" class="c-item wa-item">
+        <div class="c-icon"><i class="bi bi-whatsapp"></i></div>
+        <div class="c-info">
+          <small>تواصل سريع عبر واتساب</small>
+          <strong>راسلنا الآن لطلب تسعيرة</strong>
+        </div>
+      </a>
+
+      <a href="mailto:hsn957128@gmail.com" class="c-item">
+        <div class="c-icon"><i class="bi bi-envelope-fill"></i></div>
+        <div class="c-info">
+          <small>البريد الإلكتروني للعقود والشركات</small>
+          <strong>hsn957128@gmail.com</strong>
+        </div>
+      </a>
+
+      <div class="c-item" style="cursor:default">
+        <div class="c-icon"><i class="bi bi-geo-alt-fill"></i></div>
+        <div class="c-info">
+          <small>نطاق التغطية والرحلات</small>
+          <strong>الرياض - الدمام - جدة</strong>
+        </div>
+      </div>
+    </div>
+
+    <div class="support-banner">
+      <div class="d-flex align-items-center justify-content-between mb-2">
+        <span class="badge bg-warning text-dark fw-bold px-3 py-1 rounded-pill"><i class="bi bi-lightning-fill"></i> استجابة فورية</span>
+        <small class="text-white-50">24/7 طوال الأسبوع</small>
+      </div>
+      <p class="small mb-0 text-white-50" style="line-height:1.6">نوفّر عقود نقل دورية للشركات والمطاعم مع متابعة مستمرة لدرجات التبريد حتى لحظة التسليم.</p>
+    </div>
+  </div>
+</div>
 <div class="col-12 r"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3629.677549895684!2d46.69554074!3d24.53123762!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f0ffcc7d261f7%3A0x46b743f48ab62fe1!2z2YXZg9iq2KjYqSDYqNit2LEg2KfZhNi52YTZhQ!5e0!3m2!1sen!2seg!4v1795016854356!5m2!1sen!2seg" width="100%" height="380" style="border:0;border-radius:20px" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin" title="موقع نطاق العون"></iframe></div>
 </div></div></section>
 
@@ -434,7 +456,6 @@ document.getElementById('f').onsubmit=e=>{e.preventDefault();const d=new FormDat
 const m=['طلب عرض سعر - نطاق العون','الاسم: '+d.get('n'),'الجوال: '+d.get('p'),'نوع النقل: '+d.get('s'),'المدينة: '+d.get('c'),'التفاصيل: '+d.get('d')].join('\n');
 window.open('https://wa.me/966536304418?text='+encodeURIComponent(m),'_blank')};
 
-// دوال السكاشن التفاعلية الجديدة
 function calculateShipping() {
   const from = document.getElementById('calc-from').value;
   const to = document.getElementById('calc-to').value;
